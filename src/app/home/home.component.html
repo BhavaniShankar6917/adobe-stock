@@ -1,0 +1,7 @@
+<app-navbar></app-navbar>
+<div><a routerLink="/login">Login</a> to view content</div>
+
+<div *ngIf="currUser">
+  <p>hi {{ email }}!</p>
+  <button class="btn btn-success" (click)="service.Logout()">signout</button>
+</div>

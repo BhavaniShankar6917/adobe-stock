@@ -1,0 +1,98 @@
+/* #menu-icon {
+  height: 20px;
+} */
+* {
+  font-family: "Heebo", sans-serif;
+  --lean: font-weight:200;
+}
+.lean {
+  font-weight: 200;
+}
+.thin {
+  font-weight: 300;
+}
+.thick {
+  font-weight: 400;
+}
+.thicker {
+  font-weight: 500;
+}
+.fat {
+  font-weight: 600;
+}
+.small {
+  font-size: 12px;
+}
+.small-medium {
+  font-size: 14px;
+}
+.small-large {
+  font-size: 16px;
+}
+.black {
+  color: #212529;
+}
+.dark {
+  color: #343a40;
+}
+.grey {
+  color: #495057;
+}
+.light {
+  color: #868e96;
+}
+.lighter {
+  color: #adb5bd;
+}
+.pale {
+  color: #dee2e6;
+}
+.paler {
+  color: #e9ecef;
+}
+.navbar-button {
+  border: 0;
+  min-width: 20px;
+}
+.menu-list {
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.list-items{
+    font-weight: 500;
+    color: #868e96;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.list-items:hover{
+    cursor: pointer;
+    color: #343a40;
+}
+
+.left-nav,
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px;
+  gap: 24px;
+}
+.menu-icon{
+    fill: #868e96;
+}
+.menu-icon:hover{
+    fill: #343a40;
+    cursor: pointer;
+}
+/* .right-nav {
+  justify-content: flex-end;
+} */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #dee2e6;
+}

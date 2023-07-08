@@ -1,0 +1,304 @@
+* {
+  font-family: "Heebo", sans-serif;
+}
+.lean {
+  font-weight: 200;
+}
+.thin {
+  font-weight: 300;
+}
+.thick {
+  font-weight: 400;
+}
+.thicker {
+  font-weight: 500;
+}
+.fat {
+  font-weight: 600;
+}
+.small {
+  font-size: 12px;
+}
+.small-medium {
+  font-size: 14px;
+}
+.small-large {
+  font-size: 16px;
+}
+.black {
+  color: #212529;
+}
+.dark {
+  color: #343a40;
+}
+.grey {
+  color: #495057;
+}
+.light {
+  color: #868e96;
+}
+.lighter {
+  color: #adb5bd;
+}
+.pale {
+  color: #dee2e6;
+}
+.paler {
+  color: #e9ecef;
+}
+.branding {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .page-background {
+    background: url(https://auth.services.adobe.com/img/canvas/Fotolia_188880972_XL.jpg);
+  }
+}
+@media screen and (min-width: 600px) {
+  .canvas {
+    height: 100vh;
+    background-size: cover;
+  }
+  .main-container {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+.page-background {
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
+  .branding {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    grid-column: 2/4;
+    display: visible;
+  }
+  .branding-text {
+    color: #fff;
+  }
+  .context-branding {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .context-branding {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+.main-container {
+  height: 100%;
+  /* display: block; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.signin {
+  width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 50px;
+  color: #343a40;
+  font-size: small;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  grid-column: 5/8;
+  /* overflow-y: hidden; */
+}
+.subtitle {
+  font-size: 14px;
+  color: #495057;
+}
+.link {
+  text-decoration: none;
+  color: #228be6;
+}
+.link:hover {
+  color: #1971c2;
+  cursor: pointer;
+}
+.form-container {
+  margin-bottom: 20px;
+}
+.input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+}
+.input-invalid,
+.existing-user {
+  background-image: url("https://icons8.com/icon/8122/error");
+  border-bottom: 2px solid #e34850;
+}
+.invalid {
+  color: #e34850;
+}
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid #228be6;
+}
+.form-label {
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 400;
+  color: #495057;
+}
+.continue-button {
+  background-color: #228be6;
+  color: #fff;
+  border-radius: 16px;
+  border: 0;
+  padding: 6px 16px;
+  font-weight: 500;
+}
+.continue-button:hover {
+  background-color: #1971c2;
+}
+.password-input {
+  margin-bottom: 16px;
+}
+.continue {
+  display: flex;
+  justify-content: flex-end;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #495057;
+}
+.separator::before {
+  margin-right: 0.5em;
+}
+
+.separator::after {
+  margin-left: 0.5em;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  /* -webkit-box-flex: 1; */
+  flex: 1;
+  border-bottom: 1px solid #dee2e6;
+}
+.signin-options {
+  margin-bottom: 20px;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+}
+/* .signin-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+} */
+.provider-link {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.google {
+  border: 2px solid #dee2e6;
+}
+.apple {
+  background-color: #343a40;
+  color: #fff;
+}
+.apple-icon {
+  fill: #fff;
+}
+.facebook {
+  color: #fff;
+  background-color: #1877f2;
+}
+.icon {
+  margin-right: 8px;
+}
+.providers {
+  margin-top: 30px;
+}
+.icon-circular {
+  width: 30px;
+  height: 30px;
+}
+.provider-circular {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+.google-circle {
+  border: 2px solid #dee2e6;
+}
+.facebook-circle {
+  background-color: #1877f2;
+}
+.apple-circle {
+  background-color: #343a40;
+}
+.apple-icon-circular {
+  fill: #fff;
+}
+.signup-text p {
+  margin-bottom: 10px;
+}
+.signup-text {
+  margin-bottom: 20px;
+}
+.create-form {
+  margin-bottom: 80px;
+}
+.provider-circular:hover::before,
+.provider-circular:hover::after {
+  --scale: 1;
+}
+.provider-circular::before,
+.provider-circular::after {
+  right: -50%;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%) translateY(-80%) scale(var(--scale));
+  transition: 0.2s transform;
+  transform-origin: bottom center;
+  --scale: 0;
+  position: absolute;
+}
+.provider-circular::before {
+  width: max-content;
+  padding: 5px 7px;
+  border-radius: 3px;
+  background-color: #495057;
+  color: #fff;
+  font-size: 10px;
+  content: attr(data-tooltip);
+}
+/* .provider-circular::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 5px solid transparent;
+  border-top-color: black;
+} */
